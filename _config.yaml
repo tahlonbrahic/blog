@@ -1,0 +1,11 @@
+theme: minima
+
+author:
+  name: Tahlon Brahic
+  email: tahlonbrahic@proton.me
+  
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
