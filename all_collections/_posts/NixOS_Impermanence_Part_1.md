@@ -1,8 +1,32 @@
 ---
-title: "NixOS Impermanence Part 2: The Options"
+title: "NixOS Impermanence Part 1: The NixOS Module Options"
 date: 2025-02-26
 categories: ["nix" "security"]
 ---
+
+In my opinion the most interesting part of NixOS is its unique ability to
+produce reproducable builds. Yet one of the things that prevents this are
+everyday use. Application state, log data, and configurations polute 
+various directories in your system after an initial NixOS install and stay
+that way unless explicitly managed by something. As NixOS does not include
+that something by default the nix-community has built a set of modules that
+are meant to supplement much of the configuration that would be needed on the
+user-end to fix these issues. This module is called Impermanence.
+
+Now this would not be Nix if there was not a lack of documentation.
+The Impermanence project is no difference. As of writing, the only
+documentation can be found on it's README and to be concise it, like many
+other Nix repositories, can only help make you more confused.
+
+Part of my aim in the Nix community is help bring an understanding to Nix,
+it's code, and other parts of its implementation by presenting the underlying
+structure of this highly abstracted system. This series will break down 
+Impermanence step by step to help the community understand it and implement it.
+
+The first step in this is to condense both modules options and configurations.
+This article will cover the first sub-section of that: NixOS Impermance Options.
+The below options have been extracted from the NixOS module and summarized
+in order to make human evaluation easier.
 
 **Common Options:**
 
@@ -41,6 +65,12 @@ categories: ["nix" "security"]
   };
 }
 ```
+
+It is important to note in the above common options that these options are
+meant to be declared by the environment.persistence attribute set that
+gets defined later on. This is different from how I have seen many other
+modules use option declarations where users declare options not through
+a proxy by directly e.g. impermanence.enable = true;
 
 These are not the only options.
 The options available from the top are as follows.
