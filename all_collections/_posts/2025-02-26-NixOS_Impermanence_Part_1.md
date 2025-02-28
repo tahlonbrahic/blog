@@ -6,7 +6,7 @@ categories: ["nix" "security"]
 
 In my opinion the most interesting part of NixOS is its unique ability to
 produce reproducable builds. Yet one of the things that prevents this are
-everyday use. Application state, log data, and configurations polute 
+everyday use. Application state, log data, and configurations polute
 various directories in your system after an initial NixOS install and stay
 that way unless explicitly managed by something. As NixOS does not include
 that something by default the nix-community has built a set of modules that
@@ -20,7 +20,7 @@ other Nix repositories, can only help make you more confused.
 
 Part of my aim in the Nix community is help bring an understanding to Nix,
 it's code, and other parts of its implementation by presenting the underlying
-structure of this highly abstracted system. This series will break down 
+structure of this highly abstracted system. This series will break down
 Impermanence step by step to help the community understand it and implement it.
 
 The first step in this is to condense both modules options and configurations.
