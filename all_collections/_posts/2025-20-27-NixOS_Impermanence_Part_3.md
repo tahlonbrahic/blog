@@ -1,6 +1,6 @@
 ---
 title: "NixOS Impermanence Part 2: The Home Module"
-date: 2025-02-26 21:00:00 -400
+date: 2025-02-27 21:00:00 -400
 categories: ["nix" "security"]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "NixOS Impermanence Part 1: The NixOS Module Options"
-date: 2025-02-26 18:00:00 -400
+date: 2025-02-25 18:00:00 -400
 categories: ["nix" "security"]
 ---
 
