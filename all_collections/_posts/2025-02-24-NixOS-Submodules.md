@@ -1,6 +1,6 @@
 ---
 title: "NixOS Submodules: The Documentation You Could Never Find..."
-date: 2025-02-24 19:00:00 -500
+date: 2025-02-24
 categories: ["nix"]
 ---
 
